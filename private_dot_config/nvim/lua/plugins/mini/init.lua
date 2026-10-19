@@ -40,7 +40,7 @@ require("mini.splitjoin").setup({
 })
 
 -- a bit nicer status line
-require("mini.statusline").setup()
+--require("mini.statusline").setup()
 
 require("plugins.mini.notify")
 require("plugins.mini.completions")
@@ -48,4 +48,5 @@ require("plugins.mini.completions")
 
 -- load and configure mini picker
 require("plugins.mini.picker")
-vim.keymap.set('n', '<leader>f', ":Pick files<CR>", { desc = "Pick file" })
+vim.keymap.set('n', '<leader>ff', ":Pick files<CR>", { desc = "Pick file" })
+vim.keymap.set('n', '<leader>fg', ":Pick grep_live<CR>", { desc = "Pick grep live" })
