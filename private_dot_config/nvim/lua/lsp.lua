@@ -17,7 +17,7 @@ vim.lsp.config("clangd", {
 			"clangd",
 			"--background-index",            --
 			"--clang-tidy",                  -- 
-			-- "--query-driver=/usr/bin/**", -- force to look for specific compiler (such as gcc) 
+			"--query-driver=/usr/bin/**", -- force to look for specific compiler (such as gcc) 
 		},
 		root_markers = {
 			"compile_commands.json", -- standard file to find going up the dir hierarchy

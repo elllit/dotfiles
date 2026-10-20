@@ -4,7 +4,11 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	pattern = "*",
 	desc = "highlight selection on yank",
 	callback = function()
-		vim.hl.hl_op({ timeout = 200, visual = true })
+    if vim.fn.has("nvim-0.13") == 1 then
+		  vim.hl.hl_op({ timeout = 200, visual = true })
+    else
+      vim.highlight.on_yank({ timeout = 200, visual = true })
+    end
 	end,
 })
 
