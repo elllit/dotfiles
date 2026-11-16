@@ -1,0 +1,5 @@
+[".local/share/fonts/AnnotationMono"]
+    type = "archive"
+    url = "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/AnnotationMono.zip"
+    exact = true
+    refreshPeriod = "168h"
