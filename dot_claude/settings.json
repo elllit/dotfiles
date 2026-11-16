@@ -1,0 +1,27 @@
+{
+  "sandbox": 
+  {
+    "enabled": true
+  },
+  "permissions": {
+    "defaultMode": "plan",
+    "blockReadsOutsideWorkingDirectories": true,
+    "deny": [
+      "Bash(git commit*)",
+      "Bash(git push*)",
+      "Bash(git add*)",
+      "Bash(git rm*)",
+      "Bash(git mv*)",
+      "Bash(git merge*)",
+      "Bash(git rebase*)",
+      "Bash(git reset*)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(ssh *)",
+      "Bash(sudo *)",
+      "Bash(rm -fr *)"
+    ]
+  },
+
+  "theme": "dark-daltonized"
+}
